@@ -1,13 +1,11 @@
 import React from 'react';
 import {View, Text, Button, StyleSheet} from 'react-native';
 
-export default function Home({navigation}) {
+export default function Home() {
     return(
         <View>
             <Text>Home</Text>
-            <Button title="Navigate back" onPress ={ 
-            () => navigation.navigate('Home')
-            }></Button>
+            <Button title="Navigate back"></Button>
         </View>
     );
 }
