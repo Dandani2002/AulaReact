@@ -6,7 +6,6 @@ import ButtonCart from '../../components/ButtonCart';
 import Header from '../../components/Header';
 import Product from '../../components/Product';
 import About from './About';
-import Sobre from '../../components/Sobre';
 
 
 
@@ -17,8 +16,13 @@ export default function Main() {
  
 
     <SafeAreaView>
-        <Header title="Tecladiadores"/>
-        <Sobre
+        <Product 
+        name="Xbox Series X"
+        description="Lorem ipsum dolor sit amet conseqt adiscipli elit. Lorem ipsum dolor sit amet conseqt adiscipli elit.Lorem ipsum dolor sit amet conseqt adiscipli elit.Lorem ipsum dolor sit amet conseqt adiscipli elit.Lorem ipsum dolor sit amet conseqt adiscipli elit."
+        price="R$ 4000,00"
+        />
+        <ButtonCart
+        onPress = {() => navigation.navigate("About")}
         />
     </SafeAreaView>
 
